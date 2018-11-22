@@ -12,7 +12,7 @@ func main() {
 	swap(&x, &y)
 	fmt.Println(x, y)
 	fmt.Println(&x, &y)
-	fmt.Printf("%T, %T\n", x, y)
+	fmt.Printf("%#v, %T\n", x, y)
 	
 	defer func() {
 		str := recover()
